@@ -6,7 +6,7 @@
 		<title>Otaku Talk Bot</title>
 		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
 	<style>
-	body {
+	#top {
 	text-align: center;
 	}
 
@@ -23,8 +23,11 @@
 	.pings {
 	line-height: 1.8;
 	display:inline;
-	text-align:right;
 	width: 50%;
+	}
+	
+	.pingListRow {
+	text-align: right;
 	}
 	
 	.charSend {
@@ -69,6 +72,7 @@
 	</style>
 	</head>
 <body>
+	<div id="top">
 	<div>
 	<b>Channel:</b>
 		<input type="radio" id="otakuGeneral" name="channel" value="#otaku-talk"><label for="otakuGeneral">#otaku-talk</label>
@@ -79,6 +83,7 @@
 	<br>
 	<div>
 	<b>Message:</b> <input type="text" id="msgBox" style="width:400px;height:20px">
+	</div>
 	</div>
 	<br>
 	<div id="characterTable">
@@ -170,9 +175,6 @@
 	<div>
 		<p style="font-size:18px;margin-bottom:6px;text-align:center"><b>User IDs (use to ping user):</b></p>
 		<table id="pingList">
-			<tr class="pingListRow">
-				<th col-span="2"></th>
-			</tr>
 			<tr class="pingListRow">				
 				<td class="pings">@kaitlynmm569#9959: </td>
 				<td><input id="kait" readonly value="<@247198301517119489>"><button style="display:inline-block" onclick="copyID('kait')">Insert ID</button></td>
