@@ -43,6 +43,7 @@
 	<div>
 	<b>Channel:</b>
 		<input type="radio" id="otakuGeneral" name="channel" value="#otaku-talk"><label for="otakuGeneral">#otaku-talk</label>
+		<input type="radio" id="haikyuu" name="channel" value="#haikyuu"><label for="haikyuu">#haikyuu</label>
 		<input type="radio" id="otakuEmotions" name="channel" value="#emotional-support"><label for="otakuEmotions">#emotional-support</label>
 		<input type="radio" id="botTest" name="channel" value="#bot-channel"><label for="botTest">#bot-channel</label>
 	</div>
@@ -185,6 +186,9 @@ function sendMessage(character) {
 			break;
 		case '#emotional-support':
 			channel = 'https://discord.com/api/webhooks/786576562681806878/Kiv0cI5NJ22SQUnB7nHr6N169dIguUkZIm9SoclgQUmFFyWUsEwvYCQGhRs0qO1JC5pW';
+			break;
+		case '#haikyuu':
+			channel = 'https://discord.com/api/webhooks/786656815626190860/pYQaQZuOncP5deQXwG0RvHhryvI7un3OfvYSCY4Jrxx2B6AdHC_ibmnqWJKPuSqmrzOo';
 			break;
 		case '#bot-channel':
 			channel = 'https://discord.com/api/webhooks/786570252888047627/XWj3-I97XdQdFsglQiUZh5FnoAg3s_a27hCNcNczXTTbGG9rSwENrKmWuMZyymyTrXvu';
