@@ -4,6 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Otaku Talk Bot</title>
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
+	<style>
+	.pings {
+	line-height: 1.8;
+	}
+	</style>
 	</head>
 <body>
 	<div>
@@ -80,30 +86,24 @@
 		</tr>
 	</table>
 	</div>
+	<hr>
 	<div>
-		<p style="font-size:18px">User IDs (use to ping user):</p>
-		<p style="display:inline-block">@kaitlynmm569#9959: <input id="kait" readonly value="<@247198301517119489>"></p><button style="display:inline-block" onclick="copyID('kait')">Copy ID</button>
+		<p style="font-size:18px;margin-bottom:6px;">User IDs (use to ping user):</p>
+		<p class="pings" style="display:inline">@kaitlynmm569#9959: <input id="kait" readonly value="<@247198301517119489>"></p><button style="display:inline-block" onclick="copyID('kait')">Insert ID</button>
 	<br>
-		<p style="display:inline-block">@fem_kenma#1427: <input id ="mia" readonly value="<@764125441753350144>"></p><button style="display:inline-block" onclick="copyID('mia')">Copy ID</button>
+		<p class="pings" style="display:inline">@fem_kenma#1427: <input id ="mia" readonly value="<@764125441753350144>"></p><button style="display:inline-block" onclick="copyID('mia')">Insert ID</button>
 	<br>
-		<p style="display:inline-block">@CrookedConnorCEO[REDACTED]#9294: <input id ="connor" readonly value="<@586027521242431519>"></p><button style="display:inline-block" onclick="copyID('connor')">Copy ID</button>
+		<p class="pings" style="display:inline">@CrookedConnorCEO[REDACTED]#9294: <input id ="connor" readonly value="<@586027521242431519>"></p><button style="display:inline-block" onclick="copyID('connor')">Insert ID</button>
 	<br>
-		<p style="display:inline-block">@mads#7067: <input id ="maddie" readonly value="<@487355163800109058>"></p><button style="display:inline-block" onclick="copyID('maddie')">Copy ID</button>
+		<p class="pings" style="display:inline">@mads#7067: <input id ="maddie" readonly value="<@487355163800109058>"></p><button style="display:inline-block" onclick="copyID('maddie')">Insert ID</button>
 	</div>
 </body>
 <script>
 function copyID(user){
 	var msgBox = document.getElementById('msgBox');
-	var userID = document.getElementById(user);
-	
-	userID.select();
-	userID.setSelectionRange(0,99999);
-	
-	document.execCommand('copy');
-	userID.setSelectionRange(0,0);
-	userID.blur();
-	
 	msgBox.focus();
+	var idValue = document.getElementById(user).value;
+	msgBox.value = msgBox.value + idValue + ' ';
 }
 
 function sendMessage(character) {
@@ -210,5 +210,3 @@ function sendMessage(character) {
 }
 </script>
 </html>
-}
-}
