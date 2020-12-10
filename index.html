@@ -12,11 +12,30 @@
 	
 	.charSend {
 	background-color: rgb(142,208,115);
+	border-radius: 5px;
+	line-height: 1.09;
 	}
 	
 	.charSendx {
 	cursor: not-allowed;
 	background-color: rgb(208,115,115);
+	border-radius: 5px;
+	}
+	
+	th {
+	text-align: center;
+	text-decoration: underline;
+	font-size:18px;
+	}
+	
+	tr {
+	text-align:center;
+	}
+	
+	.team {
+	font-size:14px;
+	font-style: italic;
+	margin-bottom: 1px;
 	}
 	</style>
 	</head>
@@ -40,19 +59,16 @@
 			<th>Orange</th>
 		</tr>
 		<tr>
+			<td class="team">Karasuno</td>
+		</tr>
+		<tr>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Tsukki')">Send from Tsukki</button></div></td>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Ciel')">Send from Ciel</button></div></td>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Kakeru')">Send from Kakeru</button></div></td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Tendou')">Send from Tendou</button></div></td>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Yamaguchi')">Send from Yamaguchi</button></div></td>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Alois')">Send from Alois</button></div></td>
-		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Kenma')">Send from Kenma</button></div></td>
-		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Kuroo')">Send from Kuroo</button></div></td>
 		</tr>
 		<tr>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Kageyama')">Send from Kageyama</button></div></td>
@@ -61,10 +77,10 @@
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Hinata')">Send from Hinata</button></div></td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Oikawa')">Send from Oikawa</button></div></td>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Tanaka')">Send from Tanaka</button></div></td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Bokuto')">Send from Bokuto</button></div></td>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Noya')">Send from Noya</button></div></td>
 		</tr>
 		<tr>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Daichi')">Send from Daichi</button></div></td>
@@ -73,31 +89,49 @@
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Suga')">Send from Suga</button></div></td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Noya')">Send from Noya</button></div></td>
-		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Tanaka')">Send from Tanaka</button></div></td>
-		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Yamaguchi')">Send from Yamaguchi</button></div></td>
-		</tr>
-		<tr>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Asahi')">Send from Asahi</button></div></td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Ushijima')">Send from Ushijima</button></div></td>
+			<td class="team">Nekoma</td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Akaashi')">Send from Akaashi</button></div></td>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Kenma')">Send from Kenma</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Kuroo')">Send from Kuroo</button></div></td>
 		</tr>
 		<tr>
 			<td><div class="send"><button class="charSend" onclick="sendMessage('Lev')">Send from Lev</button></div></td>
 		</tr>
 		<tr>
-			<td><div class="send"><button class="charSendx" onclick="sendMessage('Iwa')">Send from Iwa</button></div></td>
+			<td class="team">Aoba Johsai</td>
 		</tr>
-			<tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Oikawa')">Send from Oikawa</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Iwaizumi')">Send from Iwaizumi</button></div></td>
+		</tr>
+		<tr>
 			<td><div class="send"><button class="charSendx" onclick="sendMessage('Kindaichi')">Send from Kindaichi</button></div></td>
+		</tr>
+		<tr>
+			<td class="team">Shiratorizawa</td>
+		</tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Tendou')">Send from Tendou</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Ushijima')">Send from Ushijima</button></div></td>
+		</tr>
+		<tr>
+			<td class="team">Fukurōdani</td>
+		</tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Bokuto')">Send from Bokuto</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button class="charSend" onclick="sendMessage('Akaashi')">Send from Akaashi</button></div></td>
 		</tr>
 	</table>
 	</div>
@@ -209,6 +243,9 @@ function sendMessage(character) {
 			break;
 		case 'Lev':
 			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786588952328798228/ee4277c4d3f4f59c73fea3ef5baa4f90.png';
+			break;
+		case 'Iwaizumi':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786625825201455140/39563e54ee28340bf6120a0f57bcf6d9.png';
 			break;
 		case 'Kakeru':
 			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png';
