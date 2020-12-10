@@ -10,7 +10,7 @@
 	text-align: center;
 	}
 
-	table {
+	#characterList {
 	margin-left: auto;
 	margin-right: auto;
 	}
@@ -22,6 +22,9 @@
 
 	.pings {
 	line-height: 1.8;
+	display:inline;
+	text-align:right;
+	width: 50%;
 	}
 	
 	.charSend {
@@ -36,13 +39,13 @@
 	border-radius: 5px;
 	}
 	
-	th {
+	.characterListHead {
 	text-align: center;
 	text-decoration: underline;
 	font-size:18px;
 	}
 	
-	tr {
+	.characterListRow {
 	text-align:center;
 	}
 	
@@ -52,11 +55,17 @@
 	margin-bottom: 1px;
 	}
 
-	td {
+	 .characterListcell {
 	height: 30px;
 	width: 100px;
 	padding: 5px;
 	}
+
+	#pingList {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
 	</style>
 	</head>
 <body>
@@ -73,108 +82,130 @@
 	</div>
 	<br>
 	<div id="characterTable">
-	<table>
+	<table id="characterList">
 		<caption>Available Characters</caption>
-		<tr>
-			<th>Haikyuu!</th>
-			<th>Black Butler</th>
-			<th>Orange</th>
+		<tr class="characterListRow">
+			<th class="characterListHead">Haikyuu!</th>
+			<th class="characterListHead">Black Butler</th>
+			<th class="characterListHead">Orange</th>
 		</tr>
-		<tr>
+		<tr class="characterListRow">
 			<td class="team">Karasuno</td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Tsukki')">Send from Tsukki</button></div></td>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Ciel')">Send from Ciel</button></div></td>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Kakeru')">Send from Kakeru</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Tsukki')">Send from Tsukki</button></div></td>
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Ciel')">Send from Ciel</button></div></td>
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Kakeru')">Send from Kakeru</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Yamaguchi')">Send from Yamaguchi</button></div></td>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Alois')">Send from Alois</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Yamaguchi')">Send from Yamaguchi</button></div></td>
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Alois')">Send from Alois</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Kageyama')">Send from Kageyama</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Kageyama')">Send from Kageyama</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Hinata')">Send from Hinata</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Hinata')">Send from Hinata</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Tanaka')">Send from Tanaka</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Tanaka')">Send from Tanaka</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Noya')">Send from Noya</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Noya')">Send from Noya</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Daichi')">Send from Daichi</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Daichi')">Send from Daichi</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Suga')">Send from Suga</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Suga')">Send from Suga</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Asahi')">Send from Asahi</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Asahi')">Send from Asahi</button></div></td>
 		</tr>
-		<tr>
+		<tr class="characterListRow">
 			<td class="team">Nekoma</td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Kenma')">Send from Kenma</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Kenma')">Send from Kenma</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Kuroo')">Send from Kuroo</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Kuroo')">Send from Kuroo</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Lev')">Send from Lev</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Lev')">Send from Lev</button></div></td>
 		</tr>
-		<tr>
+		<tr class="characterListRow">
 			<td class="team">Aoba Johsai</td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Oikawa')">Send from Oikawa</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Oikawa')">Send from Oikawa</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Iwaizumi')">Send from Iwaizumi</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Iwaizumi')">Send from Iwaizumi</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSendx" onclick="sendMessage('Kindaichi')">Send from Kindaichi</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSendx" onclick="sendMessage('Kindaichi')">Send from Kindaichi</button></div></td>
 		</tr>
-		<tr>
+		<tr class="characterListRow">
 			<td class="team">Shiratorizawa</td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Tendou')">Send from Tendou</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Tendou')">Send from Tendou</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Ushijima')">Send from Ushijima</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Ushijima')">Send from Ushijima</button></div></td>
 		</tr>
-		<tr>
+		<tr class="characterListRow">
 			<td class="team">Fukurōdani</td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Bokuto')">Send from Bokuto</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Bokuto')">Send from Bokuto</button></div></td>
 		</tr>
-		<tr>
-			<td><div class="send"><button class="charSend" onclick="sendMessage('Akaashi')">Send from Akaashi</button></div></td>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Akaashi')">Send from Akaashi</button></div></td>
 		</tr>
 	</table>
 	</div>
 	<hr>
 	<div>
-		<p style="font-size:18px;margin-bottom:6px;">User IDs (use to ping user):</p>
-		<p class="pings" style="display:inline">@kaitlynmm569#9959: <input id="kait" readonly value="<@247198301517119489>"></p><button style="display:inline-block" onclick="copyID('kait')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@fem_kenma#1427: <input id ="mia" readonly value="<@764125441753350144>"></p><button style="display:inline-block" onclick="copyID('mia')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@CrookedConnorCEO[REDACTED]#9294: <input id ="connor" readonly value="<@586027521242431519>"></p><button style="display:inline-block" onclick="copyID('connor')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@mads#7067: <input id ="maddie" readonly value="<@487355163800109058>"></p><button style="display:inline-block" onclick="copyID('maddie')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@dani nicole#5040: <input id ="dani" readonly value="<@652209344061898772>"></p><button style="display:inline-block" onclick="copyID('dani')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@Odin's_Beard#4286: <input id ="martin" readonly value="<@322486757683757057>"></p><button style="display:inline-block" onclick="copyID('martin')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@Zeenithu#4206: <input id ="dan" readonly value="<@517098382087553034>"></p><button style="display:inline-block" onclick="copyID('dan')">Insert ID</button>
-	<br>
-		<p class="pings" style="display:inline">@Salty#8195: <input id ="sal" readonly value="<@341046353977147392>"></p><button style="display:inline-block" onclick="copyID('sal')">Insert ID</button>
+		<p style="font-size:18px;margin-bottom:6px;text-align:center"><b>User IDs (use to ping user):</b></p>
+		<table id="pingList">
+			<tr class="pingListRow">
+				<th col-span="2"></th>
+			</tr>
+			<tr class="pingListRow">				
+				<td class="pings">@kaitlynmm569#9959: </td>
+				<td><input id="kait" readonly value="<@247198301517119489>"><button style="display:inline-block" onclick="copyID('kait')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@fem_kenma#1427: </td>
+				<td><input id ="mia" readonly value="<@764125441753350144>"><button style="display:inline-block" onclick="copyID('mia')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@CrookedConnorCEO[REDACTED]#9294: </td>
+				<td><input id ="connor" readonly value="<@586027521242431519>"><button style="display:inline-block" onclick="copyID('connor')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@mads#7067: </td>
+				<td><input id ="maddie" readonly value="<@487355163800109058>"><button style="display:inline-block" onclick="copyID('maddie')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@dani nicole#5040: </td>
+				<td><input id ="dani" readonly value="<@652209344061898772>"><button style="display:inline-block" onclick="copyID('dani')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@Odin's_Beard#4286: </td>
+				<td><input id ="martin" readonly value="<@322486757683757057>"><button style="display:inline-block" onclick="copyID('martin')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@Zeenithu#4206: </td>
+				<td><input id ="dan" readonly value="<@517098382087553034>"><button style="display:inline-block" onclick="copyID('dan')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@Salty#8195: </td>
+				<td><input id ="sal" readonly value="<@341046353977147392>"><button style="display:inline-block" onclick="copyID('sal')">Insert ID</button></td>
+			</tr>
+		</table>
 	</div>
 </body>
 <script>
@@ -292,6 +323,7 @@ function sendMessage(character) {
 	
 	request.send(JSON.stringify(params));
 	msgContent.value = '';
+	msgBox.focus();
 }
 </script>
 </html>
