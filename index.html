@@ -20,10 +20,12 @@
   <tr>
   <th>Haikyuu!</th>
   <th>Black Butler</th>
+  <th>Orange</th>
   </tr>
   <tr>
   <td><div class="send"><button onclick="sendMessage('tsukki')">Send from Tsukki</button></div></td>
   <td><div class="send"><button onclick="sendMessage('ciel')">Send from Ciel</button></div></td>
+  <td><div class="send"><button onclick="sendMessage('kakeru')">Send from Kakeru</button></div></td>
   </tr>
   <tr>
   <td><div class="send"><button onclick="sendMessage('tendou')">Send from Tendou</button></div></td>
@@ -124,6 +126,12 @@
 	  var params = {
     username: "Alois",
     avatar_url: "https://media.discordapp.net/attachments/772508309465989140/786416228503388180/image0.jpg",
+    content: msgValue
+	}
+	}else if(character == 'kakeru'){
+	  var params = {
+    username: "Kakeru",
+    avatar_url: "https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png",
     content: msgValue
 	}
 	}
