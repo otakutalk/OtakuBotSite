@@ -1,142 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Webhook</title>
-	<style>
-	#send {
-	text-align:center;
-	display: inline-block;
-	}
-	</style>
-  </head>
-  <body>
-  Message: <input type="text" id="msgBox">
-  <br>
-  <br>
-  <div id="characterTable">
-  <table>
-  <tr>
-  <th>Haikyuu!</th>
-  <th>Black Butler</th>
-  <th>Orange</th>
-  </tr>
-  <tr>
-  <td><div class="send"><button onclick="sendMessage('tsukki')">Send from Tsukki</button></div></td>
-  <td><div class="send"><button onclick="sendMessage('ciel')">Send from Ciel</button></div></td>
-  <td><div class="send"><button onclick="sendMessage('kakeru')">Send from Kakeru</button></div></td>
-  </tr>
-  <tr>
-  <td><div class="send"><button onclick="sendMessage('tendou')">Send from Tendou</button></div></td>
-  <td><div class="send"><button onclick="sendMessage('alois')">Send from Alois</button></div></td>
-  </tr>
-  <tr>
-  <td><div class="send"><button onclick="sendMessage('kenma')">Send from Kenma</button></div></td>
-  </tr>
-  <tr>
-  <td><div class="send"><button onclick="sendMessage('kuroo')">Send from Kuroo</button></div></td>
-  </tr>
-  <tr>
-  <td><div class="send"><button onclick="sendMessage('kageyama')">Send from Kageyama</button></div></td>
-  </tr>
-  <tr>
-  <td><div class="send"><button onclick="sendMessage('hinata')">Send from Hinata</button></div></td>
-  </tr>
-  </table>
-  </div>
-  <div>
-  <p style="font-size:18px">User IDs (use to ping user):</p>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Otaku Talk Bot</title>
+	</head>
+<body>
+	<div>
+	<b>Channel:</b>
+		<input type="radio" id="otakuGeneral" name="channel" value="#otaku-talk"><label for="otakuGeneral">#otaku-talk</label>
+		<input type="radio" id="otakuEmotions" name="channel" value="#emotional-support"><label for="otakuEmotions">#emotional-support</label>
+		<input type="radio" id="botTest" name="channel" value="#bot-channel"><label for="botTest">#bot-channel</label>
+	</div>
+	<br>
+	<div>
+	<b>Message:</b> <input type="text" id="msgBox" style="width:400px">
+	</div>
+	<br>
+	<div id="characterTable">
+	<table>
+		<tr>
+			<th>Haikyuu!</th>
+			<th>Black Butler</th>
+			<th>Orange</th>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Tsukki')">Send from Tsukki</button></div></td>
+			<td><div class="send"><button onclick="sendMessage('Ciel')">Send from Ciel</button></div></td>
+			<td><div class="send"><button onclick="sendMessage('Kakeru')">Send from Kakeru</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Tendou')">Send from Tendou</button></div></td>
+			<td><div class="send"><button onclick="sendMessage('Alois')">Send from Alois</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Kenma')">Send from Kenma</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Kuroo')">Send from Kuroo</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Kageyama')">Send from Kageyama</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Hinata')">Send from Hinata</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Oikawa')">Send from Oikawa</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Bokuto')">Send from Bokuto</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Daichi')">Send from Daichi</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Suga')">Send from Suga</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Noya')">Send from Noya</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Tanaka')">Send from Tanaka</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Yamaguchi')">Send from Yamaguchi</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Asahi')">Send from Asahi</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Ushijima')">Send from Ushijima</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Akaashi')">Send from Akaashi</button></div></td>
+		</tr>
+		<tr>
+			<td><div class="send"><button onclick="sendMessage('Lev')">Send from Lev</button></div></td>
+		</tr>
+	</table>
+	</div>
+	<div>
+		<p style="font-size:18px">User IDs (use to ping user):</p>
+		<p style="display:inline-block">@kaitlynmm569#9959: <input id="kait" readonly value="<@247198301517119489>"></p><button style="display:inline-block" onclick="copyID('kait')">Copy ID</button>
+	<br>
+		<p style="display:inline-block">@fem_kenma#1427: <input id ="mia" readonly value="<@764125441753350144>"></p><button style="display:inline-block" onclick="copyID('mia')">Copy ID</button>
+	<br>
+		<p style="display:inline-block">@CrookedConnorCEO[REDACTED]#9294: <input id ="connor" readonly value="<@586027521242431519>"></p><button style="display:inline-block" onclick="copyID('connor')">Copy ID</button>
+	<br>
+		<p style="display:inline-block">@mads#7067: <input id ="maddie" readonly value="<@487355163800109058>"></p><button style="display:inline-block" onclick="copyID('maddie')">Copy ID</button>
+	</div>
+</body>
+<script>
+function copyID(user){
+	var msgBox = document.getElementById('msgBox');
+	var userID = document.getElementById(user);
+	
+	userID.select();
+	userID.setSelectionRange(0,99999);
+	
+	document.execCommand('copy');
+	userID.setSelectionRange(0,0);
+	userID.blur();
+	
+	msgBox.focus();
+}
 
-  <p style="display:inline-block">@kaitlynmm569#9959: <input id="kait" readonly value="<@247198301517119489>"></p><button style="display:inline-block" onclick="copyID('kait')">Copy ID</button>
-  <br>
-  <p style="display:inline-block">@fem_kenma#1427: <input id ="mia" readonly value="<@764125441753350144>"></p><button style="display:inline-block" onclick="copyID('mia')">Copy ID</button>
-  <br>
-  <p style="display:inline-block">@CrookedConnorCEO[REDACTED]#9294: <input id ="connor" readonly value="<@586027521242431519>"></p><button style="display:inline-block" onclick="copyID('connor')">Copy ID</button>
-  <br>
-  <p style="display:inline-block">@mads#7067: <input id ="maddie" readonly value="<@487355163800109058>"></p><button style="display:inline-block" onclick="copyID('maddie')">Copy ID</button>
-  </div>
-  </body>
-  <script>
-  function copyID(user) {
-  var msgBox = document.getElementById("msgBox");
-  var userID = document.getElementById(user);
-    /* Select the text field */
-  userID.select();
-  userID.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-  userID.setSelectionRange(0, 0);
-  userID.blur();
-  
-  msgBox.focus();
-  msgBox.select();
-  }
-  
-  function sendMessage(character) {
-  var msgValue = document.getElementById("msgBox").value;
-  var msgContent = document.getElementById("msgBox");
-  var request = new XMLHttpRequest();
-      request.open("POST", "https://discordapp.com/api/webhooks/786411804648800268/HV-oqZHtNXYL0grF0Gc-G-6aQsM5YrxJFQtSykY7nF2NgEj3LpB5fSii0EYNxfVCD599");
-	  request.setRequestHeader('Content-type', 'application/json');
-	if (character == 'tsukki') {
-  var params = {
-    username: "Tsukki",
-    avatar_url: "https://cdn.discordapp.com/attachments/532403178768039940/786402334367678534/bleh-7032.png",
+function sendMessage(character) {
+	var msgValue = document.getElementById('msgBox').value;
+	var msgContent = document.getElementById('msgBox');
+	var request = new XMLHttpRequest();
+	var channelCheck = document.getElementsByName('channel');
+	var channelName = '';
+	
+	for (var i = 0, length = channelCheck.length; i < length; i++) {
+		if (channelCheck[i].checked) {
+			//alert(channelCheck[i].value);
+			channelName = channelCheck[i].value;
+			break;
+		}
+	}
+	
+	var channel = '';
+	switch(channelName) {
+		case '#otaku-talk':
+			channel = 'https://discord.com/api/webhooks/786411804648800268/HV-oqZHtNXYL0grF0Gc-G-6aQsM5YrxJFQtSykY7nF2NgEj3LpB5fSii0EYNxfVCD599';
+			break;
+		case '#emotional-support':
+			channel = 'https://discord.com/api/webhooks/786576562681806878/Kiv0cI5NJ22SQUnB7nHr6N169dIguUkZIm9SoclgQUmFFyWUsEwvYCQGhRs0qO1JC5pW';
+			break;
+		case '#bot-channel':
+			channel = 'https://discord.com/api/webhooks/786570252888047627/XWj3-I97XdQdFsglQiUZh5FnoAg3s_a27hCNcNczXTTbGG9rSwENrKmWuMZyymyTrXvu';
+	}
+	
+	request.open('POST', channel);
+	request.setRequestHeader('Content-type', 'application/json');
+	
+	var avatar = '';
+	switch(character) {
+		case 'Tsukki':
+			avatar = 'https://cdn.discordapp.com/attachments/532403178768039940/786402334367678534/bleh-7032.png';
+			break;
+		case 'Tendou':
+			avatar = 'https://cdn.discordapp.com/attachments/532403178768039940/786403557896355870/lwd6acnojr.png';
+			break;
+		case 'Kenma':
+			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786404996068933672/7b3fc75f386cf49ebb9516ea98d3b607.png';
+			break;
+		case 'Kuroo':
+			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786405115095023626/latest.png'
+			break;
+		case 'Kageyama':
+			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786405243675869214/original.png';
+			break;
+		case 'Hinata':
+			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786405345584742486/cccda6f18583df1e4c6e1fe57d21320371cab360_00.png';
+			break;
+		case 'Ciel':
+			avatar = 'https://cdn.discordapp.com/attachments/772508309465989140/786416262683164692/image0.jpg';
+			break;
+		case 'Alois':
+			avatar = 'https://media.discordapp.net/attachments/772508309465989140/786416228503388180/image0.jpg';
+			break;
+		case 'Oikawa':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786585723385413693/336324826052201.png';
+			break;
+		case 'Bokuto':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786586486773514250/qqz2asvw4aj51.png';
+			break;
+		case 'Daichi':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786586529409269770/170833.png';
+			break;
+		case 'Suga':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786586561868988416/4efbf5b659b05f31ac38ee6c53973d1a.png';
+			break;
+		case 'Noya':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786586609801101322/7f85eb612a2fc1c8b58c1b9ca72e2ad9.png';
+			break;
+		case 'Tanaka':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786586649600983060/5d68de542c3477013c7ac02e2bdeca9a.png';
+			break;
+		case 'Yamaguchi':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786587110391414784/EVLiPB_UEAAyb4H.png';
+			break;
+		case 'Asahi':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786588822225158174/250885.png';
+			break;
+		case 'Ushijima':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786588858506280980/yrXnBkVt.png';
+			break;
+		case 'Akaashi':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786588901736579132/300.png';
+			break;
+		case 'Lev':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786588952328798228/ee4277c4d3f4f59c73fea3ef5baa4f90.png';
+			break;
+		case 'Kakeru':
+			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png';
+	}
+	
+	var params = {
+    username: character,
+    avatar_url: avatar,
     content: msgValue
 	}
-	}else if(character == 'tendou'){
-	  var params = {
-    username: "Tendou",
-    avatar_url: "https://cdn.discordapp.com/attachments/532403178768039940/786403557896355870/lwd6acnojr.png",
-    content: msgValue
-	}
-	}else if(character == 'kenma'){
-	  var params = {
-    username: "Kenma",
-    avatar_url: "https://cdn.discordapp.com/attachments/731366873806929930/786404996068933672/7b3fc75f386cf49ebb9516ea98d3b607.png",
-    content: msgValue
-	}
-	}else if(character == 'kuroo'){
-	  var params = {
-    username: "Kuroo",
-    avatar_url: "https://cdn.discordapp.com/attachments/731366873806929930/786405115095023626/latest.png",
-    content: msgValue
-	}
-	}else if(character == 'kageyama'){
-	  var params = {
-    username: "Kageyama",
-    avatar_url: "https://cdn.discordapp.com/attachments/731366873806929930/786405243675869214/original.png",
-    content: msgValue
-	}
-	}else if(character == 'hinata'){
-	  var params = {
-    username: "Hinata",
-    avatar_url: "https://cdn.discordapp.com/attachments/731366873806929930/786405345584742486/cccda6f18583df1e4c6e1fe57d21320371cab360_00.png",
-    content: msgValue
-	}
-	}else if(character == 'ciel'){
-	  var params = {
-    username: "Ciel",
-    avatar_url: "https://cdn.discordapp.com/attachments/772508309465989140/786416262683164692/image0.jpg",
-    content: msgValue
-	}
-	}else if(character == 'alois'){
-	  var params = {
-    username: "Alois",
-    avatar_url: "https://media.discordapp.net/attachments/772508309465989140/786416228503388180/image0.jpg",
-    content: msgValue
-	}
-	}else if(character == 'kakeru'){
-	  var params = {
-    username: "Kakeru",
-    avatar_url: "https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png",
-    content: msgValue
-	}
-	}
+	
 	request.send(JSON.stringify(params));
-	msgContent.value = "";
- }
+	msgContent.value = '';
+}
 </script>
 </html>
+}
+}
