@@ -6,6 +6,20 @@
 		<title>Otaku Talk Bot</title>
 		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
 	<style>
+	body {
+	text-align: center;
+	}
+
+	table {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	caption {
+	font-size: 18px;
+	text-decoration: underline;
+	}
+
 	.pings {
 	line-height: 1.8;
 	}
@@ -37,6 +51,12 @@
 	font-style: italic;
 	margin-bottom: 1px;
 	}
+
+	td {
+	height: 30px;
+	width: 100px;
+	padding: 5px;
+	}
 	</style>
 	</head>
 <body>
@@ -49,11 +69,12 @@
 	</div>
 	<br>
 	<div>
-	<b>Message:</b> <input type="text" id="msgBox" style="width:400px">
+	<b>Message:</b> <input type="text" id="msgBox" style="width:400px;height:20px">
 	</div>
 	<br>
 	<div id="characterTable">
 	<table>
+		<caption>Available Characters</caption>
 		<tr>
 			<th>Haikyuu!</th>
 			<th>Black Butler</th>
