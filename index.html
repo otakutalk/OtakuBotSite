@@ -93,18 +93,22 @@
 			<th class="characterListHead">Haikyuu!</th>
 			<th class="characterListHead">Black Butler</th>
 			<th class="characterListHead">Orange</th>
+			<th class="characterListHead">Citrus</th>
 		</tr>
 		<tr class="characterListRow">
 			<td class="team">Karasuno</td>
 		</tr>
 		<tr class="characterListRow">
-			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Saltyshima')">Send from Tsukki</button></div></td>
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Tsukki')">Send from Tsukki</button></div></td>
 			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Ciel')">Send from Ciel</button></div></td>
 			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Kakeru')">Send from Kakeru</button></div></td>
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick= "sendMessage('Mei')">Send from Mei</button></div></td>
 		</tr>
 		<tr class="characterListRow">
 			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Yamaguchi')">Send from Yamaguchi</button></div></td>
 			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Alois')">Send from Alois</button></div></td>
+			<td class="characterListcell"></td>
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick= "sendMessage('Yuzu')">Send from Yuzu</button></div></td>
 		</tr>
 		<tr class="characterListRow">
 			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Kageyama')">Send from Kageyama</button></div></td>
@@ -253,7 +257,7 @@ function sendMessage(character) {
 	
 	var avatar = '';
 	switch(character) {
-		case 'Saltyshima':
+		case 'Tsukki':
 			avatar = 'https://cdn.discordapp.com/attachments/532403178768039940/786402334367678534/bleh-7032.png';
 			break;
 		case 'Tendou':
@@ -315,6 +319,12 @@ function sendMessage(character) {
 			break;
 		case 'Kindaichi':
 			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786712971974803496/2Q.png';
+			break;
+		case 'Yuzu':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786940604016885840/6NJRG9.png';
+			break;
+		case 'Mei':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786941223880753162/latest.png';
 			break;
 		case 'Kakeru':
 			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png';
