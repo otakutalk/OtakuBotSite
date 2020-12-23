@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Osamu Bot</title>
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+<body>
+	<div id="top">
+	<div>
+	<b>Channel:</b>
+		<input type="radio" id="otakuGeneral" name="channel" value="#otaku-talk" checked><label for="otakuGeneral">#otaku-talk</label>
+		<!--<input type="radio" id="haikyuu" name="channel" value="#haikyuu"><label for="haikyuu">#haikyuu</label>-->
+	</div>
+	<br>
+	<div>
+	<b>Message:</b> <input type="text" id="msgBox" style="width:400px;height:20px" onkeypress="handle(event, 'Osamu')">
+	</div>
+	</div>
+	<br>
+	<div id="butt" class="send"><button class="charSend" onclick="sendMessage('Osamu')">Send from Osamu</button></div>
+	<br>
+	<div>
+		<p style="font-size:18px;margin-bottom:6px;text-align:center"><b>User IDs (use to ping user):</b></p>
+		<table id="pingList">
+			<tr class="pingListRow">				
+				<td class="pings">@kaitlynmm569#9959: </td>
+				<td><input id="kait" readonly value="<@247198301517119489>"><button style="display:inline-block" onclick="copyID('kait')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@fem_kenma#1427: </td>
+				<td><input id ="mia" readonly value="<@764125441753350144>"><button style="display:inline-block" onclick="copyID('mia')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@CrookedConnorCEO[REDACTED]#9294: </td>
+				<td><input id ="connor" readonly value="<@586027521242431519>"><button style="display:inline-block" onclick="copyID('connor')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@mads#7067: </td>
+				<td><input id ="maddie" readonly value="<@487355163800109058>"><button style="display:inline-block" onclick="copyID('maddie')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@dani nicole#5040: </td>
+				<td><input id ="dani" readonly value="<@652209344061898772>"><button style="display:inline-block" onclick="copyID('dani')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@Odin's_Beard#4286: </td>
+				<td><input id ="martin" readonly value="<@322486757683757057>"><button style="display:inline-block" onclick="copyID('martin')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@Zeenithu#4206: </td>
+				<td><input id ="dan" readonly value="<@517098382087553034>"><button style="display:inline-block" onclick="copyID('dan')">Insert ID</button></td>
+			</tr>
+			<tr class="pingListRow">
+				<td class="pings">@Salty#8195: </td>
+				<td><input id ="sal" readonly value="<@341046353977147392>"><button style="display:inline-block" onclick="copyID('sal')">Insert ID</button></td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<br>
+	<div id="passCheck">
+	<button class='charSend' id="goBack" onclick="mainCheck()" style="display:inline-block">Back To Main Page</button>
+	</div>
+</body>
+<script>
+   function handle(e, character){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that runs
+			sendMessage(character);
+        }
+    }
+
+function mainCheck() {
+	var password = 'crtmh';
+	//var passBox = document.getElementById('passBox');
+	//var input = document.getElementById('passBox').value;
+	
+	var input = prompt("Please enter the password to get back to the main page: ","");
+	
+	if(input === null) {
+	return;
+	}else	if(input != password) {
+		alert('Incorrect password!');
+	}else {
+	location.href='index.html';
+	}
+}
+
+function copyID(user){
+	var msgBox = document.getElementById('msgBox');
+	msgBox.focus();
+	var idValue = document.getElementById(user).value;
+	msgBox.value = msgBox.value + idValue + ' ';
+}
+
+function sendMessage(character) {
+	var msgValue = document.getElementById('msgBox').value;
+	var msgContent = document.getElementById('msgBox');
+	var request = new XMLHttpRequest();
+	var channelCheck = document.getElementsByName('channel');
+	var channelName = '';
+	
+	for (var i = 0, length = channelCheck.length; i < length; i++) {
+		if (channelCheck[i].checked) {
+			//alert(channelCheck[i].value);
+			channelName = channelCheck[i].value;
+			break;
+		}
+	}
+	
+	var channel = '';
+	switch(channelName) {
+		case '#otaku-talk':
+			channel = 'https://discord.com/api/webhooks/786570252888047627/XWj3-I97XdQdFsglQiUZh5FnoAg3s_a27hCNcNczXTTbGG9rSwENrKmWuMZyymyTrXvu';
+			break;
+		/*case '#haikyuu':
+			channel = 'https://discord.com/api/webhooks/786656815626190860/pYQaQZuOncP5deQXwG0RvHhryvI7un3OfvYSCY4Jrxx2B6AdHC_ibmnqWJKPuSqmrzOo';
+			break;*/
+	}
+	
+	request.open('POST', channel);
+	request.setRequestHeader('Content-type', 'application/json');
+	
+	var avatar = '';
+	switch(character) {
+		case 'Osamu':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/791315977018933258/unknown.png';
+}
+	
+	var params = {
+    username: character,
+    avatar_url: avatar,
+    content: msgValue
+	}
+	
+	request.send(JSON.stringify(params));
+	msgContent.value = '';
+	msgBox.focus();
+}
+</script>
+</html>
