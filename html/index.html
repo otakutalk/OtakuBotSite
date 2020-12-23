@@ -5,74 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Otaku Talk Bot</title>
 		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
-	<style>
-	#top {
-	text-align: center;
-	}
-
-	#characterList {
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-	caption {
-	font-size: 18px;
-	text-decoration: underline;
-	}
-
-	.pings {
-	line-height: 1.8;
-	display:inline;
-	width: 50%;
-	}
-	
-	.pingListRow {
-	text-align: right;
-	}
-	
-	.charSend {
-	background-color: rgb(142,208,115);
-	border-radius: 5px;
-	line-height: 1.09;
-	}
-	
-	.charSendx {
-	cursor: not-allowed;
-	background-color: rgb(208,115,115);
-	border-radius: 5px;
-	}
-	
-	.characterListHead {
-	text-align: center;
-	text-decoration: underline;
-	font-size:18px;
-	}
-	
-	.characterListRow {
-	text-align:center;
-	}
-	
-	.team {
-	font-size:14px;
-	font-style: italic;
-	margin-bottom: 1px;
-	}
-
-	 .characterListcell {
-	height: 30px;
-	width: 100px;
-	padding: 5px;
-	}
-
-	#pingList {
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-	</style>
+		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 <body>
 	<div id="top">
+	<div id="passCheck">
+	<button class="charSend" id="goBack" href="atsumu.html" onclick="location.href='atsumu.html'">Atsumu</button>
+	<button class="charSend" id="goBack" href="osamu.html" onclick="location.href='osamu.html'">Osamu</button>
+	</div>
 	<div>
 	<b>Channel:</b>
 		<input type="radio" id="otakuGeneral" name="channel" value="#otaku-talk"><label for="otakuGeneral">#otaku-talk</label>
