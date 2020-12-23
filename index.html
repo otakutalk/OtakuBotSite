@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Main Access Portal</title>
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
+		<link href="html/style.css" rel="stylesheet" type="text/css" />
+	</head>
+<body id="access">
+<div id="top">
+	<b>Main Page Access: </b><input type="password" id="passBox" style="width:400px;height:20px" onkeypress="handle(event)"/> <button class="charSend" id="goBack" onclick="mainCheck()">Submit</button>
+</div>
+</body>
+<script>
+function handle(e){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that runs
+			mainCheck();
+        }
+    }
+
+function mainCheck() {
+	var password = 'crtmh';
+	var passBox = document.getElementById('passBox');
+	var input = document.getElementById('passBox').value;
+	//var input = prompt("Please enter the password to get back to the main page: ","");
+	
+	if(input === null) {
+		alert('Please enter a password to continue');
+	}else	if(input != password) {
+		alert('Incorrect password!');
+		passBox.value = '';
+		passBox.focus();
+	}else {
+	location.href='./mainPage.html';
+	//localStorage.setItem('passCheck', null);
+	sessionStorage.setItem("passCheck",1);
+	}
+}
+</script>
+</html>
