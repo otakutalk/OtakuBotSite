@@ -5,13 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Otaku Talk Bot</title>
 		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
-		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="html/style.css" rel="stylesheet" type="text/css" />
 	</head>
-<body>
+<body id="full">
 	<div id="top">
 	<div id="passCheck">
-	<button class="charSend" id="goBack" href="atsumu.html" onclick="location.href='atsumu.html'">Atsumu</button>
-	<button class="charSend" id="goBack" href="osamu.html" onclick="location.href='osamu.html'">Osamu</button>
+	<button class="charSend" id="goBack" href="atsumu.html" onclick="location.href='html/atsumu.html'">Atsumu</button>
+	<button class="charSend" id="goBack" href="osamu.html" onclick="location.href='html/osamu.html'">Osamu</button>
 	</div>
 	<div>
 	<b>Channel:</b>
@@ -113,6 +113,15 @@
 		<tr class="characterListRow">
 			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Akaashi')">Send from Akaashi</button></div></td>
 		</tr>
+		<tr class="characterListRow">
+			<td class="team">Inarizaki</td>
+		</tr>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Atsumu')">Send from Atsumu</button></div></td>
+		</tr>
+		<tr class="characterListRow">
+			<td class="characterListcell"><div class="send"><button class="charSend" onclick="sendMessage('Osamu')">Send from Osamu</button></div></td>
+		</tr>
 	</table>
 	</div>
 	<hr>
@@ -155,12 +164,22 @@
 	</div>
 </body>
 <script>
+function mainCheck() {
+	var passCheck = sessionStorage.getItem("passCheck");
+	console.log(passCheck);
+	if(!passCheck){
+		location.href='index.html';
+	} else if(passCheck === 1) {
+		return;
+	}
+};
+
 function copyID(user){
 	var msgBox = document.getElementById('msgBox');
 	msgBox.focus();
 	var idValue = document.getElementById(user).value;
 	msgBox.value = msgBox.value + idValue + ' ';
-}
+};
 
 function sendMessage(character) {
 	var msgValue = document.getElementById('msgBox').value;
@@ -266,6 +285,12 @@ function sendMessage(character) {
 		case 'Mei':
 			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/786941223880753162/latest.png';
 			break;
+		case 'Osamu':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/791315977018933258/unknown.png'
+			break;
+		case 'Atsumu':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/791316827237122048/unknown.png'
+			break;
 		case 'Kakeru':
 			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png';
 	}
@@ -279,6 +304,8 @@ function sendMessage(character) {
 	request.send(JSON.stringify(params));
 	msgContent.value = '';
 	msgBox.focus();
-}
+};
+
+window.onload = mainCheck();
 </script>
 </html>
