@@ -85,7 +85,9 @@ function mainCheck() {
 	}else	if(input != password) {
 		alert('Incorrect password!');
 	}else {
-	location.href='index.html';
+	sessionStorage.setItem('passCheck', 1);
+	location.href='../mainPage.html';
+
 	}
 }
 
