@@ -134,6 +134,8 @@
 	width: 612px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 15px;
+	height: 1100px;
 	}
 
 	#msgBox {
@@ -160,22 +162,37 @@
 		#insertLinks {
 			display: inline-block;
 			width: 100%;
-			padding: 3px;
+			padding: 15px;
+			height: 1380px;
 		}
 
     #userList{
       width: 100%;
 			margin: 0 auto;
 			border-radius: 5px;
+			overflow: auto;
     }
 
 		#emoji {
 			width: 97%;
 			margin: 0 auto;
 			border-radius: 5px;
+			overflow: auto;
 		}
 
 		#msgBox {
 			width: 97%;
 		}
+}
+
+#footer {
+background-color: #5c755e;
+margin: 10px;
+height: 15px;
+clear: both;
+border-radius: 5px;
+color: #efe5d0;
+text-align: center;
+padding: 15px;
+font-size: 90%;
 }
