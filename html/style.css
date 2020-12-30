@@ -1,4 +1,4 @@
-#top {
+	#top {
 	text-align: center;
 	}
 
@@ -12,14 +12,51 @@
 	text-decoration: underline;
 	}
 
+	.emojiIDCol {
+	text-align: left;
+	width: 76px;
+	}
+
 	.pings {
 	line-height: 1.8;
 	display:inline;
 	width: 50%;
 	}
+
+	.emojis {
+	line-height: 1.8;
+	display:inline-block;
+	overflow-wrap: break-word;
+	width: 124px;
+	}
+
+	#emoji {
+	float: left;
+	background-color: whitesmoke;
+	padding: 7px;
+	border-radius: 20px;
+	}
 	
 	.pingListRow {
 	text-align: right;
+	}
+
+	.emojiListRow {
+	text-align: right;
+	}
+
+	#pingList {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#emojiList {
+	float: left;
+	}
+
+	.inputEmojiBox {
+	width: 1px;
+	background-color:  rgb(142,208,115);
 	}
 	
 	.charSend {
@@ -55,11 +92,6 @@
 	width: 100px;
 	padding: 5px;
 	}
-
-	#pingList {
-	margin-left: auto;
-	margin-right: auto;
-	}
 	
 	#butt {
 	height: 30px;
@@ -80,9 +112,9 @@
 	}
 	
 	#access {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  	position: fixed;
+  	top: 50%;
+ 	left: 50%;
+ 	/* bring your own prefixes */
+ 	transform: translate(-50%, -50%);
 	}
