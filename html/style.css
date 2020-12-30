@@ -20,7 +20,8 @@
 	.pings {
 	line-height: 1.8;
 	display:inline;
-	width: 50%;
+	overflow-wrap: break-word;
+	width: 291px;
 	}
 
 	.emojis {
@@ -48,10 +49,6 @@
 	#pingList {
 	margin-left: auto;
 	margin-right: auto;
-	}
-
-	#emojiList {
-	float: left;
 	}
 
 	.inputEmojiBox {
@@ -87,7 +84,7 @@
 	margin-bottom: 1px;
 	}
 
-	 .characterListcell {
+	.characterListcell {
 	height: 30px;
 	width: 100px;
 	padding: 5px;
@@ -109,12 +106,76 @@
 	
 	#goBack {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	}
 	
 	#access {
-  	position: fixed;
-  	top: 50%;
+  position: fixed;
+  top: 50%;
  	left: 50%;
  	/* bring your own prefixes */
  	transform: translate(-50%, -50%);
 	}
+
+	.insert {
+	width: 67px;
+	}
+
+	#userList {
+	float: right;
+	width: 380px;
+	background-color: bisque;
+	border-radius: 20px;
+	}
+
+	#insertLinks {
+	text-align: center;
+	width: 612px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	#msgBox {
+		width:400px;
+		height:20px;
+	}
+
+	#passBox {
+		width:400px;
+		height:20px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	#emojiList {
+		margin: 0 auto;
+	}
+
+	@media screen and (max-width: 650px) {
+		html {
+			width: 100%;
+		}
+
+		#insertLinks {
+			display: inline-block;
+			width: 100%;
+			padding: 3px;
+		}
+
+    #userList{
+      width: 100%;
+			margin: 0 auto;
+			border-radius: 5px;
+    }
+
+		#emoji {
+			width: 97%;
+			margin: 0 auto;
+			border-radius: 5px;
+		}
+
+		#msgBox {
+			width: 97%;
+		}
+}
