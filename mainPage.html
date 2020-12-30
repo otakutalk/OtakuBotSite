@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Otaku Talk Bot</title>
-		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
-		<link href="html/style.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-			<div id="top">
-			<div id="passCheck">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Otaku Talk Bot</title>
+	<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
+	<link href="html/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="top">
+		<div id="passCheck">
 			<button class="charSend" id="goBack" href="atsumu.html" onclick="location.href='html/atsumu.html'">Atsumu</button>
 			<button class="charSend" id="goBack" href="osamu.html" onclick="location.href='html/osamu.html'">Osamu</button>
 			</div>
@@ -22,7 +24,7 @@
 			</div>
 			<br>
 			<div>
-			<b>Message:</b> <input type="text" id="msgBox" style="width:400px;height:20px">
+			<b>Message:</b> <input type="text" id="msgBox">
 			</div>
 			</div>
 			<br>
@@ -125,141 +127,141 @@
 			</table>
 			</div>
 			<hr>
-
+		<div id="insertLinks">
 			<div id="emoji">
 				<p style="font-size:18px;margin-bottom:6px;text-align:center"><b>Emoji IDs:</b></p>
 						<table id="emojiList">
 							<tr class="emojiListRow">				
 								<td class="emojis">:zerotwo:</td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id="zerotwo" readonly value="<:zerotwo:783012193921662988>"><button style="display:inline-block" onclick="copyID('zerotwo')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id="zerotwo" readonly value="<:zerotwo:783012193921662988>"><button class="insert" style="display:inline-block" onclick="copyID('zerotwo')">Insert ID</button></td>
 							</tr>
 							<tr class="emojiListRow">
 								<td class="emojis">:yEs: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="yEs" readonly value="<:yEs:788855587956981871>"><button style="display:inline-block" onclick="copyID('yEs')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="yEs" readonly value="<:yEs:788855587956981871>"><button class="insert" style="display:inline-block" onclick="copyID('yEs')">Insert ID</button></td>
 								</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:wtf: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="wtf" readonly value="<:wtf:788975437900546049>"><button style="display:inline-block" onclick="copyID('wtf')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="wtf" readonly value="<:wtf:788975437900546049>"><button class="insert" style="display:inline-block" onclick="copyID('wtf')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:WHEEZE: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="WHEEZE" readonly value="<:WHEEZE:788861424893689918>"><button style="display:inline-block" onclick="copyID('WHEEZE')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="WHEEZE" readonly value="<:WHEEZE:788861424893689918>"><button class="insert" style="display:inline-block" onclick="copyID('WHEEZE')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:WhEeZe: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="WHEEZE2" readonly value="<:WhEeZe:788857816638685196>"><button style="display:inline-block" onclick="copyID('WHEEZE2')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="WHEEZE2" readonly value="<:WhEeZe:788857816638685196>"><button class="insert" style="display:inline-block" onclick="copyID('WHEEZE2')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:uwuw: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="uwuw" readonly value="<:uwuw:786823637080080414>"><button style="display:inline-block" onclick="copyID('uwuw')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="uwuw" readonly value="<:uwuw:786823637080080414>"><button class="insert" style="display:inline-block" onclick="copyID('uwuw')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:upvote: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="upvote" readonly value="<:upvote:788114808729763871>"><button style="display:inline-block" onclick="copyID('upvote')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="upvote" readonly value="<:upvote:788114808729763871>"><button class="insert" style="display:inline-block" onclick="copyID('upvote')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:screm: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="screm" readonly value="<:screm:787231658914480128>"><button style="display:inline-block" onclick="copyID('screm')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="screm" readonly value="<:screm:787231658914480128>"><button class="insert" style="display:inline-block" onclick="copyID('screm')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:scared: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="scared" readonly value="<:scared:783012244082262026>"><button style="display:inline-block" onclick="copyID('scared')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="scared" readonly value="<:scared:783012244082262026>"><button class="insert" style="display:inline-block" onclick="copyID('scared')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:sadshrek: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="sadshrek" readonly value="<:sadshrek:788578153768419349>"><button style="display:inline-block" onclick="copyID('sadshrek')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="sadshrek" readonly value="<:sadshrek:788578153768419349>"><button class="insert" style="display:inline-block" onclick="copyID('sadshrek')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:sad: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="sad" readonly value="<:sad:788116234147070043>"><button style="display:inline-block" onclick="copyID('sad')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="sad" readonly value="<:sad:788116234147070043>"><button class="insert" style="display:inline-block" onclick="copyID('sad')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:porn: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="porn" readonly value="<:porn:788075869339648070>"><button style="display:inline-block" onclick="copyID('porn')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="porn" readonly value="<:porn:788075869339648070>"><button class="insert" style="display:inline-block" onclick="copyID('porn')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:poggies: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="poggies" readonly value="<:poggies:786985054618255400>"><button style="display:inline-block" onclick="copyID('poggies')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="poggies" readonly value="<:poggies:786985054618255400>"><button class="insert" style="display:inline-block" onclick="copyID('poggies')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:papa_sins: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="papa_sins" readonly value="<:papa_sins:771446766923022356>"><button style="display:inline-block;" onclick="copyID('papa_sins')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="papa_sins" readonly value="<:papa_sins:771446766923022356>"><button class="insert" style="display:inline-block;" onclick="copyID('papa_sins')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:oWo: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="oWo" readonly value="<:oWo:775403204912742441>"><button style="display:inline-block" onclick="copyID('oWo')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="oWo" readonly value="<:oWo:775403204912742441>"><button class="insert" style="display:inline-block" onclick="copyID('oWo')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:nice: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="nice" readonly value="<:nice:787366651989196840>"><button style="display:inline-block" onclick="copyID('nice')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="nice" readonly value="<:nice:787366651989196840>"><button class="insert" style="display:inline-block" onclick="copyID('nice')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:monkas: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="monkas" readonly value="<:monkas:786068820732674048>"><button style="display:inline-block" onclick="copyID('monkas')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="monkas" readonly value="<:monkas:786068820732674048>"><button class="insert" style="display:inline-block" onclick="copyID('monkas')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:mia1: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="mia1" readonly value="<:mia1:771925023820349470>"><button style="display:inline-block" onclick="copyID('mia1')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="mia1" readonly value="<:mia1:771925023820349470>"><button class="insert" style="display:inline-block" onclick="copyID('mia1')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:mentalbreakdown: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="mentalbreakdown" readonly value="<:mentalbreakdown:789625524648542268>"><button style="display:inline-block" onclick="copyID('mentalbreakdown')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="mentalbreakdown" readonly value="<:mentalbreakdown:789625524648542268>"><button class="insert" style="display:inline-block" onclick="copyID('mentalbreakdown')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:loveyou2: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="loveyou2" readonly value="<:loveyou2:788855925003911199>"><button style="display:inline-block" onclick="copyID('loveyou2')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="loveyou2" readonly value="<:loveyou2:788855925003911199>"><button class="insert" style="display:inline-block" onclick="copyID('loveyou2')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="pings">;loveyou: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="loveyou" readonly value="<:loveyou:788857404065972264>"><button style="display:inline-block" onclick="copyID('loveyou')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="loveyou" readonly value="<:loveyou:788857404065972264>"><button class="insert" style="display:inline-block" onclick="copyID('loveyou')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:kaitlyn: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="kaitlyn" readonly value="<:kaitlyn:786822533176492032>"><button style="display:inline-block" onclick="copyID('kaitlyn')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="kaitlyn" readonly value="<:kaitlyn:786822533176492032>"><button class="insert" style="display:inline-block" onclick="copyID('kaitlyn')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:gremlin: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="gremlin" readonly value="<:gremlin:788442790841024554>"><button style="display:inline-block" onclick="copyID('gremlin')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="gremlin" readonly value="<:gremlin:788442790841024554>"><button class="insert" style="display:inline-block" onclick="copyID('gremlin')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:ellaer: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="ellaer" readonly value="<:ellaer:787010879308824616>"><button style="display:inline-block" onclick="copyID('ellaer')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="ellaer" readonly value="<:ellaer:787010879308824616>"><button class="insert" style="display:inline-block" onclick="copyID('ellaer')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:downvote: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="downvote" readonly value="<:downvote:788115521504673812>"><button style="display:inline-block" onclick="copyID('downvote')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="downvote" readonly value="<:downvote:788115521504673812>"><button class="insert" style="display:inline-block" onclick="copyID('downvote')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:distraught: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="distraught" readonly value="<:distraught:783012223366201345>"><button style="display:inline-block" onclick="copyID('distraught')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="distraught" readonly value="<:distraught:783012223366201345>"><button class="insert" style="display:inline-block" onclick="copyID('distraught')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:depression: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="depression" readonly value="<:depression:771927499898617888>"><button style="display:inline-block" onclick="copyID('depression')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="depression" readonly value="<:depression:771927499898617888>"><button class="insert" style="display:inline-block" onclick="copyID('depression')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:daddy_phil: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="daddy_phil" readonly value="<:daddy_phil:790780347268071424>"><button style="display:inline-block" onclick="copyID('daddy_phil')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="daddy_phil" readonly value="<:daddy_phil:790780347268071424>"><button class="insert" style="display:inline-block" onclick="copyID('daddy_phil')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:citrus: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="citrus" readonly value="<:citrus:775404039612661800>"><button style="display:inline-block" onclick="copyID('citrus')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="citrus" readonly value="<:citrus:775404039612661800>"><button class="insert" style="display:inline-block" onclick="copyID('citrus')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:brucewayne: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="brucewayne" readonly value="<:brucewayne:786958035503284284>"><button style="display:inline-block" onclick="copyID('brucewayne')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="brucewayne" readonly value="<:brucewayne:786958035503284284>"><button class="insert" style="display:inline-block" onclick="copyID('brucewayne')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:baka: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="baka" readonly value="<:baka:783012331474911263>"><button style="display:inline-block" onclick="copyID('baka')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="baka" readonly value="<:baka:783012331474911263>"><button class="insert" style="display:inline-block" onclick="copyID('baka')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:angy: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="angy" readonly value="<:angy:788442645235236934>"><button style="display:inline-block" onclick="copyID('angy')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="angy" readonly value="<:angy:788442645235236934>"><button class="insert" style="display:inline-block" onclick="copyID('angy')">Insert ID</button></td>
 							</tr>
 				<tr class="emojiListRow">
 								<td class="emojis">:angry: </td>
-								<td class="emojiIDCol"><input class="inputEmojiBox" id ="angry~1" readonly value="<:angry:783012269063536660>"><button style="display:inline-block" onclick="copyID('angry~1')">Insert ID</button></td>
+								<td class="emojiIDCol"><input class="inputEmojiBox" id ="angry~1" readonly value="<:angry:783012269063536660>"><button class="insert" style="display:inline-block" onclick="copyID('angry~1')">Insert ID</button></td>
 							</tr>
 					</table>
 				</div>
@@ -269,37 +271,38 @@
 				<table id="pingList">
 					<tr class="pingListRow">				
 						<td class="pings">@kaitlynmm569#9959: </td>
-						<td><input class="inputEmojiBox" id="kait" readonly value="<@247198301517119489>"><button style="display:inline-block" onclick="copyID('kait')">Insert ID</button></td>
+						<td class="emojiIDCol"><input class="inputEmojiBox" id="kait" readonly value="<@247198301517119489>"><button class="insert" style="display:inline-block" onclick="copyID('kait')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@fem_kenma#1427: </td>
-						<td><input class="inputEmojiBox" id ="mia" readonly value="<@764125441753350144>"><button style="display:inline-block" onclick="copyID('mia')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="mia" readonly value="<@764125441753350144>"><button class="insert" style="display:inline-block" onclick="copyID('mia')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@CrookedConnorCEO[REDACTED]#9294: </td>
-						<td><input class="inputEmojiBox" id ="connor" readonly value="<@586027521242431519>"><button style="display:inline-block" onclick="copyID('connor')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="connor" readonly value="<@586027521242431519>"><button class="insert" style="display:inline-block" onclick="copyID('connor')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@mads#7067: </td>
-						<td><input class="inputEmojiBox" id ="maddie" readonly value="<@487355163800109058>"><button style="display:inline-block" onclick="copyID('maddie')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="maddie" readonly value="<@487355163800109058>"><button class="insert" style="display:inline-block" onclick="copyID('maddie')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@dani nicole#5040: </td>
-						<td><input class="inputEmojiBox" id ="dani" readonly value="<@652209344061898772>"><button style="display:inline-block" onclick="copyID('dani')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="dani" readonly value="<@652209344061898772>"><button class="insert" style="display:inline-block" onclick="copyID('dani')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@Odin's_Beard#4286: </td>
-						<td><input class="inputEmojiBox" id ="martin" readonly value="<@322486757683757057>"><button style="display:inline-block" onclick="copyID('martin')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="martin" readonly value="<@322486757683757057>"><button class="insert" style="display:inline-block" onclick="copyID('martin')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@Zeenithu#4206: </td>
-						<td><input class="inputEmojiBox" id ="dan" readonly value="<@517098382087553034>"><button style="display:inline-block" onclick="copyID('dan')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="dan" readonly value="<@517098382087553034>"><button class="insert" style="display:inline-block" onclick="copyID('dan')">Insert ID</button></td>
 					</tr>
 					<tr class="pingListRow">
 						<td class="pings">@Salty#8195: </td>
-						<td><input class="inputEmojiBox" id ="sal" readonly value="<@341046353977147392>"><button style="display:inline-block" onclick="copyID('sal')">Insert ID</button></td>
+						<td><input class="inputEmojiBox" id ="sal" readonly value="<@341046353977147392>"><button class="insert" style="display:inline-block" onclick="copyID('sal')">Insert ID</button></td>
 					</tr>
 				</table>
+			</div>
 			</div>
 		</body>
 <script>
