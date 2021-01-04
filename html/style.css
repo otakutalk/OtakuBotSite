@@ -15,6 +15,13 @@
 	.emojiIDCol {
 	text-align: left;
 	width: 76px;
+	display: inline-block;
+	}
+
+	.pingIDCol {
+	text-align: left;
+	width: 76px;
+	display: inline-block;
 	}
 
 	.pings {
@@ -36,6 +43,7 @@
 	background-color: whitesmoke;
 	padding: 7px;
 	border-radius: 20px;
+	margin-left: 0;
 	}
 	
 	.pingListRow {
@@ -120,22 +128,26 @@
 
 	.insert {
 	width: 67px;
+	background-color: rgb(251, 251, 251);
+	border-radius: 5px;
 	}
 
 	#userList {
 	float: right;
-	width: 380px;
+	width: 379px;
 	background-color: bisque;
 	border-radius: 20px;
 	}
 
 	#insertLinks {
 	text-align: center;
-	width: 612px;
+	width: 620px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 15px;
-	height: 1100px;
+	/*height: 1100px;*/
+	/*background-color: aquamarine;*/
+	overflow: hidden;
 	}
 
 	#msgBox {
@@ -160,10 +172,10 @@
 		}
 
 		#insertLinks {
-			display: inline-block;
+			display: block;
 			width: 100%;
 			padding: 15px;
-			height: 1380px;
+			/*height: 1380px;*/
 		}
 
     #userList{
