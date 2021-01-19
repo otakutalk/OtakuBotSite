@@ -6,7 +6,7 @@ function handle(e, character){
     }
 
 function mainCheck() {
-	var password = 'crtmh';
+	var password = 'doodoofart';
 	//var passBox = document.getElementById('passBox');
 	//var input = document.getElementById('passBox').value;
 	
