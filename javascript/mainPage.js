@@ -131,6 +131,9 @@ function sendMessage(character) {
 		case 'Kiyoko':
 			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/801079398430277643/9fcf5c21548f9c4dfb01519aac97b5a7.png'
 			break;
+		case 'Sebastian':
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/801087647782404137/unknown.png'
+			break;
 		case 'Kakeru':
 			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png';
 	}
