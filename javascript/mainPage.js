@@ -126,10 +126,10 @@ function sendMessage(character) {
 			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/791316827237122048/unknown.png'
 			break;
 		case 'Yachi':
-			avatar = 'https://media.discordapp.net/attachments/643322146931867648/801079476632289280/10a2b21e30644166ab2e95c3981e80391486eb4a_00.png'
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/801079476632289280/10a2b21e30644166ab2e95c3981e80391486eb4a_00.png'
 			break;
 		case 'Kiyoko':
-			avatar = 'https://media.discordapp.net/attachments/643322146931867648/801079398430277643/9fcf5c21548f9c4dfb01519aac97b5a7.png?width=681&height=681'
+			avatar = 'https://cdn.discordapp.com/attachments/643322146931867648/801079398430277643/9fcf5c21548f9c4dfb01519aac97b5a7.png'
 			break;
 		case 'Kakeru':
 			avatar = 'https://cdn.discordapp.com/attachments/731366873806929930/786427810403057694/orange-kakeru-naruse.png';
