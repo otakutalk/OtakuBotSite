@@ -20,6 +20,10 @@ Suga
 
 Asahi
 
+Kiyoko
+
+Yachi
+
 ___Nekoma___
 
 Kenma
@@ -59,6 +63,8 @@ Osamu
 Ciel
 
 Alois
+
+Sebastian
 
 ### Orange
 
