@@ -1,0 +1,248 @@
+	#top {
+	text-align: center;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.characterList {
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+	caption {
+	font-size: 18px;
+	text-decoration: underline;
+	}
+
+	#bread {
+		text-align: center;
+	}
+
+	.emojiIDCol {
+	text-align: left;
+	width: 76px;
+	display: inline-block;
+	}
+
+	.pingIDCol {
+	text-align: left;
+	width: 76px;
+	display: inline-block;
+	}
+
+	.pings {
+	line-height: 1.8;
+	display:inline;
+	overflow-wrap: break-word;
+	width: 291px;
+	}
+
+	.emojis {
+	line-height: 1.8;
+	display:inline-block;
+	overflow-wrap: break-word;
+	width: 124px;
+	}
+
+	#emoji {
+	float: left;
+	background-color: whitesmoke;
+	padding: 7px;
+	border-radius: 20px;
+	margin-left: 0;
+	}
+	
+	.pingListRow {
+	text-align: right;
+	}
+
+	.emojiListRow {
+	text-align: right;
+	}
+
+	#pingList {
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.inputEmojiBox {
+	width: 1px;
+	background-color:  rgb(142,208,115);
+	}
+	
+	.charSend {
+	background-color: rgb(142,208,115);
+	border-radius: 5px;
+	line-height: 1.09;
+	}
+	
+	.charSendx {
+	cursor: not-allowed;
+	background-color: rgb(208,115,115);
+	border-radius: 5px;
+	}
+	
+	.characterListHead {
+		text-align: center;
+		text-decoration: underline;
+		font-size:16px;
+		}
+	
+	.characterListRow {
+	text-align:center;
+	}
+	
+	.team {
+	font-size:14px;
+	font-style: italic;
+	margin-bottom: 1px;
+	}
+
+	.characterListcell {
+		height: 30px;
+		width: 100px;
+		padding: 5px;
+		background-color: rgb(142,208,115);
+		border-radius: 10px;
+		line-height: 1.09;
+		text-align: left;
+		}
+	
+	#butt {
+	height: 30px;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	#passCheck {
+	text-align: center;
+	padding-bottom: 8px;
+	}
+	
+	#goBack {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	#access {
+  position: fixed;
+  top: 50%;
+ 	left: 50%;
+ 	/* bring your own prefixes */
+ 	transform: translate(-50%, -50%);
+	}
+
+	.insert {
+	width: 67px;
+	background-color: rgb(251, 251, 251);
+	border-radius: 5px;
+	}
+
+	#userList {
+	float: right;
+	width: 379px;
+	background-color: bisque;
+	border-radius: 20px;
+	}
+
+	#insertLinks {
+	text-align: center;
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	/*height: 1100px;*/
+	/*background-color: aquamarine;*/
+	overflow: hidden;
+	}
+
+	#msgBox {
+		width:400px;
+		height:20px;
+	}
+
+	#passBox {
+		width:400px;
+		height:20px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	#emojiList {
+		margin: 0 auto;
+	}
+
+	@media screen and (max-width: 650px) {
+		html {
+			width: 100%;
+		}
+
+		#insertLinks {
+			display: block;
+			width: 100%;
+			padding: 15px;
+			/*height: 1380px;*/
+		}
+
+    #userList{
+      width: 100%;
+			margin: 0 auto;
+			border-radius: 5px;
+			overflow: auto;
+    }
+
+		#emoji {
+			width: 97%;
+			margin: 0 auto;
+			border-radius: 5px;
+			overflow: auto;
+		}
+
+		#msgBox {
+			width: 97%;
+		}
+}
+
+#footer {
+background-color: rgb(142,208,115);
+margin: 10px;
+height: 15px;
+clear: both;
+border-radius: 5px;
+color: #000000;
+text-align: center;
+padding: 15px;
+font-size: 90%;
+border-width: 5px;
+border-color: #000000;
+}
+
+#characterSelect {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#show {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*.label {
+	background:#aaa;
+    color:#fff;
+	border-radius:8px;   
+    padding:1em;
+    margin:1em; 
+	cursor:pointer;
+	text-align: center;
+}*/
+
+#sendButton {
+	height: 25px;
+}
