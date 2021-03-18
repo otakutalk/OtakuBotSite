@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Page</title>
+	<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="accessTest">
+    <div id="topTest">
+    <b>Message:</b> <input type="text" id="msgBox"> <button type="button" class="charSend" id="sendButton" onclick="sendMessageTest()">Send</button>
+    <br>
+    <b>Color: </b><input id="color" value="#91f786" type="color">  <input id="resetColor" type="checkbox"><label for="resetColor"><i>Reset color after send?</i></label>
+    <br>
+    <b>Number of Fields: </b><input id="fields" type="number"></input>  <button type="button" onclick="fieldCalc(document.getElementById('fields').value)">test</button>
+    <br>
+    <hr>
+    <div id="fieldDiv"></div>
+    </div>
+</body>
+<script src="../javascript/testPage.js"></script>
+</html>
