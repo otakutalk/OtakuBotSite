@@ -7,9 +7,16 @@
 		<link rel="icon" href="https://cdn.discordapp.com/attachments/643322146931867648/786603432194080828/unknown.png">
 		<link href="html/style.css" rel="stylesheet" type="text/css" />
 	</head>
-<body id="access">
+<body>
+
+	<div class="alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Warning:</strong> Site currently being updated. All features may not work as intended.
+	  </div>
+<div id="access">
 <div id="top">
 	<b>Main Page Access: </b><input type="password" id="passBox" onkeypress="handle(event)"/> <button class="charSend" id="goBack" onclick="mainCheck()">Submit</button>
+</div>
 </div>
 </body>
 <script src="javascript/index.js"></script>
