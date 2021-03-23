@@ -9,16 +9,47 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body id="accessTest">
+<body>
     <div id="topTest">
-    <b>Message:</b> <input type="text" id="msgBox"> <button type="button" class="charSend" id="sendButton" onclick="sendMessageTest()">Send</button>
-    <br>
-    <b>Color: </b><input id="color" value="#91f786" type="color">  <input id="resetColor" type="checkbox"><label for="resetColor"><i>Reset color after send?</i></label>
-    <br>
-    <b>Number of Fields: </b><input id="fields" type="number"></input>  <button type="button" onclick="fieldCalc(document.getElementById('fields').value)">test</button>
-    <br>
-    <hr>
+    <h2>Embed Creator</h2>
+    <div>
+        <b>Channel:</b>
+            <input type="radio" id="otakuGeneral" name="channel" value="#otaku-talk" checked><label for="otakuGeneral">#otaku-talk</label>
+            <input type="radio" id="haikyuu" name="channel" value="#haikyuu"><label for="haikyuu">#haikyuu</label>
+            <input type="radio" id="otakuEmotions" name="channel" value="#emotional-support"><label for="otakuEmotions">#emotional-support</label>
+            <input type="radio" id="botTest" name="channel" value="#bot-channel"><label for="botTest">#bot-channel</label>
+        </div>
+        <br>
+    <b>Message:</b> <input type="text" id="msgBox">
+    <br><br>
+    <input type="checkbox" id="embedAdd" onchange="getEmbeds()"><label for="embedAdd"><i>Include Embed?</i></label>
+    <br><br>
+    <div id="addEmbed" class="hide">
+    <b>Embed Color: </b><input id="color" value="#91f786" type="color">  <input id="resetColor" type="checkbox"><label for="resetColor"><i>Reset color after send?</i></label>
+    <br><br>
+    <b>Author: </b><input type="text" id="embedAuthor">
+    <br><br>
+    <b>Author Icon (URL): </b><input type="text" id="embedAURL">
+    <br><br>
+    <b>Thumbnail (URL): </b><input type="text" id="embedThumb">
+    <br><br>
+    <b>Title: </b><input type="text" id="embedTitle">
+    <br><br>
+    <b>Description: </b><input type="text" id="embedDesc">
+    <br><br>
+    <b>Number of Fields: </b><input id="fields" type="number" max="20" min="0" oninput="fieldCalc(document.getElementById('fields').value)"></input>  <!--<button type="button" onclick="fieldCalc(document.getElementById('fields').value)">test</button>-->
     <div id="fieldDiv"></div>
+    <br>
+    <b>Image (URL): </b><input type="text" id="embedImage">
+    <br><br>
+    <b>Footer: </b><input type="text" id="embedFooter">
+    <br><br>
+    <b>Footer Image (URL): </b><input type="text" id="embedFURL">
+    <br><br>
+    <input id="resetFields" type="checkbox"><label for="resetFields"><i>Reset all fields after send?</i></label>
+    <br><br>
+</div>
+    <button type="button" class="charSend" id="sendButton" onclick="sendMessageTest()">Send</button>
     </div>
 </body>
 <script src="../javascript/testPage.js"></script>
