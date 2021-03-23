@@ -8,6 +8,25 @@ function testCheck() {
 	}
 };
 
+function mainCheck() {
+	var password = 'crtmh';
+	var passwordCheck = sessionStorage.getItem('passCheck');
+
+    if(!passwordCheck){
+        var input = prompt("Please enter the password to get back to the main page: ","");
+	if(input === null) {
+	return;
+	}else	if(input != password) {
+		alert('Incorrect password!');
+	}else {
+	sessionStorage.setItem('passCheck', 1);
+	location.href='../mainPage.html';
+
+	}
+}else{
+    location.href='../mainPage.html';
+}}
+
 function sendMessageTest(fieldArray) {
     var fieldArray = [];
     var channelCheck = document.getElementsByName('channel');
