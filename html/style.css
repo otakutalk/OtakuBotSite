@@ -38,7 +38,7 @@
 	text-align: left;
 	width: auto;
 	display: inline-block;
-		background-color:lightseagreen;
+		/*background-color:lightseagreen;*/
 	}
 
 	.pingIDCol {
@@ -59,7 +59,7 @@
 	display:inline;
 	overflow-wrap: break-word;
 	width: auto;
-		background-color: lawngreen;
+		/*background-color: lawngreen;*/
 	}
 
 	#emoji {
