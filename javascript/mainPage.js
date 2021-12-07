@@ -8,6 +8,25 @@ function mainCheck() {
 	}
 };
 
+function testCheck() {
+	var password = 'uwu';
+	var passwordCheck = sessionStorage.getItem('testCheck');
+
+    if(!passwordCheck){
+        var input = prompt("Please enter the password to get to the Embed Creator: ","");
+	if(input === null) {
+	return;
+	}else	if(input != password) {
+		alert('Incorrect password!');
+	}else {
+	sessionStorage.setItem('testCheck', 1);
+	location.href='./html/testPage.html';
+
+	}
+}else{
+    location.href='./html/testPage.html';
+}}
+
 function getCharacters() {
     var show = document.getElementById('show');
     var showValue = show.options[show.selectedIndex].text;
@@ -79,6 +98,7 @@ function sendMessage() {
 	
 	if(!character) {
 		alert("Please choose a character!");
+		return;
 	}
 	
 	var channel = '';
