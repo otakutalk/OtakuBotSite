@@ -1,3 +1,14 @@
+	html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+	margin: 0 0 45px;
+    /* bottom = footer height */
+    padding: 25px;
+  }
+
 	#top {
 	text-align: center;
 	}
@@ -24,37 +35,50 @@
 	}
 
 	.emojiIDCol {
-	text-align: left;
-	width: 76px;
+	/*text-align: left;*/
+	width: auto;
 	display: inline-block;
+		/*background-color:lightseagreen;*/
+	height: 35px;
+	align-content: center;
 	}
 
 	.pingIDCol {
 	text-align: left;
-	width: 76px;
+	width: auto;
 	display: inline-block;
 	}
 
 	.pings {
-	line-height: 1.8;
+	line-height: 1.7;
 	display:inline;
 	overflow-wrap: break-word;
-	width: 291px;
+	width: auto;
 	}
 
 	.emojis {
-	line-height: 1.8;
-	display:inline-block;
+	line-height: 1.7;
+	display:inline;
 	overflow-wrap: break-word;
-	width: 124px;
+	width: auto;
+		/*background-color: lawngreen;*/
+	align-content: center;
+	}
+
+	.emojis img {
+		max-height: 30px;
+		min-height: 20px;
+	align-content: center;
 	}
 
 	#emoji {
-	float: left;
+	float: inherit;
 	background-color: whitesmoke;
 	padding: 7px;
 	border-radius: 20px;
 	margin-left: 0;
+	margin-right: 0;
+	width: 45%;
 	}
 	
 	.pingListRow {
@@ -66,8 +90,7 @@
 	}
 
 	#pingList {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	}
 
 	.inputEmojiBox {
@@ -156,20 +179,25 @@
 
 	#userList {
 	float: right;
-	width: 379px;
+	width: 45%;
 	background-color: bisque;
 	border-radius: 20px;
+	padding: 7px;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+	display: inline;
 	}
 
 	#insertLinks {
 	text-align: center;
-	width: 620px;
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px;
+	padding: 7px;
 	/*height: 1100px;*/
 	/*background-color: aquamarine;*/
-	overflow: hidden;
+	overflow: auto;
 	}
 
 	#msgBox {
@@ -200,18 +228,20 @@
 			/*height: 1380px;*/
 		}
 
-    #userList{
-      width: 100%;
+    	#userList{
+      		width: 60%;
 			margin: 0 auto;
 			border-radius: 5px;
 			overflow: auto;
+			text-align: center;
     }
 
 		#emoji {
-			width: 97%;
+			width: 60%;
 			margin: 0 auto;
 			border-radius: 5px;
 			overflow: auto;
+			text-align: center;
 		}
 
 		#msgBox {
@@ -222,6 +252,7 @@
 #footer {
 background-color: rgb(142,208,115);
 margin: 10px;
+margin-bottom: 0px;
 height: 15px;
 clear: both;
 border-radius: 5px;
@@ -229,8 +260,18 @@ color: #000000;
 text-align: center;
 padding: 15px;
 font-size: 90%;
-border-width: 5px;
-border-color: #000000;
+display: block;
+align-content: center;
+position: absolute;
+left: calc(100vh - 99vh);
+right: calc(100vh - 99vh);
+bottom: calc(100vh - 98vh);
+width: 95%;
+overflow: hidden;
+}
+
+.wrapper {
+	margin-top: -15px;
 }
 
 #characterSelect {
@@ -260,3 +301,25 @@ border-color: #000000;
 #Haikyuu {
 	text-align: center;
 }
+
+.alert {
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
+	float: top;
+  }
+  
+  .closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+	color: black;
+  }
